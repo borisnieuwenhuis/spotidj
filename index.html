@@ -1,17 +1,30 @@
 <html>
   <head>
-    <link rel="stylesheet" href="sp://import/css/eve.css">
-    <script data-main="js/main" src="js/require.js"></script>
+    <link rel="stylesheet" href="sp://import/css/adam.css">
+    <link rel="stylesheet" href="sp://import/css/shared.css">
+    <link rel="stylesheet" href="sp://import/css/api.css">
+
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="http://127.0.0.1:7070/socket.io/socket.io.js"></script>
   </head>
 
   <body>
-    <!--a id="login">login</a-->
-
-    <div id="song_selector" style="position: absolute;">
-      <input type="search">
+    <div class="row">
+      <div class="span4" id="song_selector">
+        <input type="search">
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        Songs
+        <div id="song-list"></div>
+      </div>
+      <div class="span2">
+        DJs
+        <div id="dj-list"></div>
+      </div>
     </div>
 
-    <div id="photo_container">
-    </div>
+     <script data-main="js/main" src="js/require.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
-require(["jquery", "backbone", "scrollto","cs"], function(JQuery, Backbone, cs) {
-    require(["cs!musicquiz"], function(Quiz) {
-        //Quiz.init();
+require(["jquery", "backbone", "cs"], function(JQuery, Backbone, cs) {
+    require(["cs!dj"], function(DJ) {
+        DJ.init();
     });
 })
